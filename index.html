@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Shopping Cart</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <meta name="robots" content="noindex,follow" />
+</head>
+<body>
+  <div class="shopping-cart">
+    <!-- Title -->
+    <div class="title">
+      Shopping Bag
+      <span><pre>                                     Price/Item</pre></span>
+    </div>
+
+    <!-- Product #1 -->
+    <div class="item" id="item1">
+      <div class="buttons">
+        <button class="delete-btn" type="button">X</button>
+        <span class="like-btn">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24">
+            <path fill="none" d="M0 0h24v24H0z"/>
+            <path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"/>
+          </svg>
+        </span>
+        
+      </div>
+
+      <div class="image">
+        <img src="roundNeck.jpg" alt="" />
+      </div>
+
+      <div class="description">
+        <span>Daniel Jean</span>
+        <span>Round Neck</span>
+        <span>Maroon</span>
+      </div>
+
+      <div class="quantity">
+        <button class="minus-btn" type="button">-</button>
+        <input type="text" value="1">
+        <button class="plus-btn" type="button">+</button>
+      </div>
+
+      <div class="total-price">$700</div>
+    </div>
+
+    <!-- Product #2 -->
+    <div class="item" id="item2">
+      <div class="buttons">
+        <button class="delete-btn" type="button">X</button>
+        <span class="like-btn">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24">
+            <path fill="none" d="M0 0h24v24H0z"/>
+            <path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"/>
+          </svg>
+        </span>
+      </div>
+
+      <div class="image">
+        <img src="watch.jpg" alt="picture"/>
+      </div>
+
+      <div class="description">
+        <span>Wrist Watch</span>
+        <span>Rubber</span>
+        <span>Black</span>
+      </div>
+
+      <div class="quantity">
+        <button class="minus-btn" type="button">-</button>
+        <input type="text" value="1">
+        <button class="plus-btn" type="button">+</button>
+      </div>
+
+      <div class="total-price">$5000</div>
+    </div>
+
+    <!-- Product #3 -->
+    <div class="item" id="item3">
+      <div class="buttons">
+        <button class="delete-btn" type="button">X</button>
+        <span class="like-btn">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24">
+            <path fill="none" d="M0 0h24v24H0z"/>
+            <path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"/>
+          </svg>
+        </span>
+      </div>
+
+      <div class="image">
+        <img src="sneaker.jpg" alt=""/>
+      </div>
+      
+      <div class="description">
+        <span>Woodland</span>
+        <span>Sneaker Shoe</span>
+        <span>White</span>
+      </div>
+
+      <div class="quantity">
+        <button class="minus-btn" type="button">-</button>
+        <input type="text" value="1">
+        <button class="plus-btn" type="button">+</button>
+      </div>
+
+      <div class="total-price">$7000</div>
+    </div>
+
+    <!-- Total Price -->
+    <div class="total-price">Total Price: $<span id="total-price">13400</span></div>
+  </div>
+
+ <script src="Rit.js"></script>
+</body>
+</html>

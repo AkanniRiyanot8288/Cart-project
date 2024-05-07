@@ -1,0 +1,100 @@
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  width: 100%;
+  height: 100%;
+  padding: 10px;
+  margin: 0;
+  background-color: rgb(6, 145, 151);
+  font-family: 'roboto', sans-serif;
+}
+
+.shopping-cart {
+  width: 750px;
+  height: auto;
+  margin: 80px auto;
+  background: rgb(76, 180, 180);
+  box-shadow: 1px 2px 3px 0px rgba(0, 0, 0, 0.10);
+  border-radius: 6px;
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+}
+
+.title {
+  border-bottom: 1px solid rgb(108, 201, 224);
+  color: rgb(255, 255, 255);
+  font-size: 18px;
+  font-weight: 400;
+}
+
+.item {
+  display: flex;
+  margin-bottom: 20px;
+}
+
+.buttons {
+  display: flex;
+  flex-direction: column;
+}
+
+.buttons button {
+  cursor: pointer;
+  outline: none;
+  border: none;
+  background: transparent;
+}
+
+.like-btn {
+  width: 24px;
+  height: 24px;
+  position: relative;
+}
+
+.like-btn::before,
+.like-btn::after {
+  content: '';
+  position: absolute;
+  width: 12px;
+  height: 21px;
+  background-color: transparent;
+  border-radius: 50%;
+  left: 0;
+  right: 0;
+  margin: auto;
+}
+
+.quantity {
+  display: flex;
+  align-items: center;
+  margin-left: auto;
+}
+
+.quantity input {
+  width: 40px;
+  text-align: center;
+}
+
+.total-price {
+  margin-left: 20px;
+}
+.like-btn {
+width: 24px;
+height: 24px;
+display: inline-block;
+}
+
+.like-btn svg {
+fill: transparent;
+stroke: red; 
+stroke-width: 2;
+transition: stroke 0.3s ease;
+}
+
+.like-btn.clicked svg {
+fill: red; 
+stroke: transparent;
+}
